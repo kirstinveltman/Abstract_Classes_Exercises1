@@ -15,6 +15,14 @@ namespace Abstract_Classes_Exercises1
             employee.lastName = "Student";
 
             employee.SayName();
+
+            // this works
+            employee.Quit(employee: employee);
+            
+            // this doesn't:
+            //Employee quit = new IQuittable();
+            //quit.Quit(employee: employee);
+
             Console.ReadLine();
         }
     }
