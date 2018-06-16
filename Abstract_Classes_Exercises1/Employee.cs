@@ -15,7 +15,8 @@ namespace Abstract_Classes_Exercises1
 
         public void Quit(Employee employee)
         {
-            Console.WriteLine(firstName + " " + lastName + " " + "has quit.");
+            //throw new NotImplementedException();
+            Console.WriteLine("Someone has quit.");
         }
     }
 }

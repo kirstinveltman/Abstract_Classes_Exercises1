@@ -16,15 +16,11 @@ namespace Abstract_Classes_Exercises1
 
             employee.SayName();
 
-            // this works
-            employee.Quit(employee: employee);
 
-            // this doesn't:
-            IQuittable quit = new IQuittable();
+            IQuittable quit = new Employee();
             quit.Quit(employee: employee);
 
             Console.ReadLine();
         }
-
     }
 }
