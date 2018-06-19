@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Abstract_Classes_Exercises1
 {
-    interface IQuittable
-    {
-        void Quit(Employee employee);
-    }
+    //interface IQuittable
+    //{
+    //    void Quit(Employee employee);
+    //}
 }

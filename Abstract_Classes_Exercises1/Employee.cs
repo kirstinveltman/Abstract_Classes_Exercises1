@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstract_Classes_Exercises1
 {
-    class Employee : Person, IQuittable
+    class Employee<T> : Person //, IQuittable
     {
         public override void SayName()
         {
@@ -14,26 +14,27 @@ namespace Abstract_Classes_Exercises1
         }
 
         public int Id { get; set; }
+        public List<T> Things { get; set; }
 
-        public static bool operator== (Id n1,Id n2)
-        {
-            if (n1 == n2)
-                return true;
-            else
-                return false;
-        }
+        //public static bool operator== (Id n1,Id n2)
+        //{
+        //    if (n1 == n2)
+        //        return true;
+        //    else
+        //        return false;
+        //}
 
-        public static bool operator!= (Id n1, Id n2)
-        {
-            if (n1 != n2)
-                return true;
-            else
-                return false;
-        }
+        //public static bool operator!= (Id n1, Id n2)
+        //{
+        //    if (n1 != n2)
+        //        return true;
+        //    else
+        //        return false;
+        //}
 
-        public void Quit(Employee employee)
-        {
-            Console.WriteLine(FirstName + " " + LastName + " has quit.");
-        }
+        //public void Quit(Employee employee)
+        //{
+        //    Console.WriteLine(FirstName + " " + LastName + " has quit.");
+        //}
     }
 }
