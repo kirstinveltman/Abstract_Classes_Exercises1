@@ -16,7 +16,7 @@ namespace Abstract_Classes_Exercises1
         public int Id { get; set; }
         public List<T> Things { get; set; }
 
-        //public static bool operator== (Id n1,Id n2)
+        //public static bool operator== (Employee n1,Id Employee2)
         //{
         //    if (n1 == n2)
         //        return true;
@@ -24,7 +24,7 @@ namespace Abstract_Classes_Exercises1
         //        return false;
         //}
 
-        //public static bool operator!= (Id n1, Id n2)
+        //public static bool operator!= (Employee n1, Employee n2)
         //{
         //    if (n1 != n2)
         //        return true;
