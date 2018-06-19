@@ -13,10 +13,27 @@ namespace Abstract_Classes_Exercises1
             base.SayName();
         }
 
+        public int Id { get; set; }
+
+        public static bool operator== (Id n1,Id n2)
+        {
+            if (n1 == n2)
+                return true;
+            else
+                return false;
+        }
+
+        public static bool operator!= (Id n1, Id n2)
+        {
+            if (n1 != n2)
+                return true;
+            else
+                return false;
+        }
+
         public void Quit(Employee employee)
         {
-            //throw new NotImplementedException();
-            Console.WriteLine("Someone has quit.");
+            Console.WriteLine(FirstName + " " + LastName + " has quit.");
         }
     }
 }

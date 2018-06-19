@@ -11,14 +11,16 @@ namespace Abstract_Classes_Exercises1
         static void Main(string[] args)
         {
             Employee employee = new Employee();
-            employee.firstName = "Sample";
-            employee.lastName = "Student";
+            employee.FirstName = "Sample";
+            employee.LastName = "Student";
 
             employee.SayName();
 
 
-            IQuittable quit = new Employee();
+            IQuittable quit = new Employee() { FirstName = "Student", LastName = "Employee" };
             quit.Quit(employee: employee);
+
+
 
             Console.ReadLine();
         }
